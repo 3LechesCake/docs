@@ -2,48 +2,48 @@
 
 * [What is Tres Leches  Finance?](README.md)
 
-## Group 1
+## Intro
 
-* [Project Overview](group-1/project-overview/README.md)
-  * [Vision](group-1/project-overview/vision.md)
-  * [Scholarship](group-1/project-overview/scholarship.md)
-  * [Voting](group-1/project-overview/voting.md)
-  * [Community](group-1/project-overview/community.md)
-  * [Social Media](group-1/project-overview/social-media.md)
+* [Project Overview](intro/project-overview/README.md)
+  * [Vision](intro/project-overview/vision.md)
+  * [Scholarship](intro/project-overview/scholarship.md)
+  * [Voting](intro/project-overview/voting.md)
+  * [Community](intro/project-overview/community.md)
+  * [Social Media](intro/project-overview/social-media.md)
 
-## Group 2
+## Token Information
 
-* [Tokens](group-2/tokens/README.md)
-  * [Tres Leches](group-2/tokens/tres-leches.md)
-  * [Tres Leches Cake](group-2/tokens/tres-leches-cake.md)
-  * [Tres Leches Cupcake](group-2/tokens/tres-leches-cupcake.md)
-  * [Staking](group-2/tokens/staking.md)
+* [Tokens](token-information/tokens/README.md)
+  * [Tres Leches](token-information/tokens/tres-leches.md)
+  * [Tres Leches Cake](token-information/tokens/tres-leches-cake.md)
+  * [Tres Leches Cupcake](token-information/tokens/tres-leches-cupcake.md)
+  * [Staking](token-information/tokens/staking.md)
 
-## Group 3
+## Our SmartSwap
 
-* [Swap](group-3/swap/README.md)
-  * [Addresses](group-3/swap/addresses.md)
-  * [How to add liquidity](group-3/swap/how-to-add-liquidity.md)
-  * [How to swap](group-3/swap/how-to-swap.md)
+* [Swap](our-smartswap/swap/README.md)
+  * [Addresses](our-smartswap/swap/addresses.md)
+  * [How to add liquidity](our-smartswap/swap/how-to-add-liquidity.md)
+  * [How to swap](our-smartswap/swap/how-to-swap.md)
 
-## Group 4
+## Our Wallet
 
-* [Wallet](group-4/wallet/README.md)
-  * [Android](group-4/wallet/android.md)
-  * [IOS](group-4/wallet/ios.md)
-  * [Dapp Catalog](group-4/wallet/dapp-catalog.md)
+* [Wallet](our-wallet/wallet/README.md)
+  * [Android](our-wallet/wallet/android.md)
+  * [IOS](our-wallet/wallet/ios.md)
+  * [Dapp Catalog](our-wallet/wallet/dapp-catalog.md)
 
-## Group 5
+## Our Blockchain
 
-* [Blockchain](group-5/blockchain/README.md)
-  * [Nodes](group-5/blockchain/nodes.md)
+* [Blockchain](our-blockchain/blockchain/README.md)
+  * [Nodes](our-blockchain/blockchain/nodes.md)
 
-## Group 6
+## Our NFTs
 
-* [NFT](group-6/nft/README.md)
-  * [Owner's](group-6/nft/owners.md)
-  * [Desert Rolodex Collection](group-6/nft/desert-rolodex-collection.md)
+* [NFT](our-nfts/nft/README.md)
+  * [Owner's](our-nfts/nft/owners.md)
+  * [Desert Rolodex Collection](our-nfts/nft/desert-rolodex-collection.md)
 
-## Group 7
+## Who we are
 
-* [Team](group-7/team.md)
+* [Team](who-we-are/team.md)

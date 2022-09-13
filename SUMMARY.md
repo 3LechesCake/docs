@@ -43,3 +43,7 @@
 * [NFT](group-6/nft/README.md)
   * [Owner's](group-6/nft/owners.md)
   * [Desert Rolodex Collection](group-6/nft/desert-rolodex-collection.md)
+
+## Group 7
+
+* [Team](group-7/team.md)

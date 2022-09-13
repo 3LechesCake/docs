@@ -4,72 +4,9 @@ description: A Cryptocurrency so sweet you can actually taste it.
 
 # What is Tres Leches  Finance?
 
-{% hint style="info" %}
-**Good to know:** providing a brief overview of your product and its core use cases is a great place to start with product docs. Your product might seem obvious to you – you made it! However, to others, even folks who are trying your product after reading your site or getting a sales demo, it can still be unclear. This is your chance to clarify your product and set the right expectations!
-{% endhint %}
+Tres Leches Finance was created on October 2021, our initial goal was to create a cryptocurrency project where we can give out something back to the community. Our main goal was to create a token where we can give scholarship awards to students in need, our main focus was to launch Tres Leches Cake as our first charity project. We launched the project with a lot of ups and downs, however, did never stop us from continuing and growing our utilities. To many, a cryptocurrency that is charity based won't be successful without utilities, and to some extent they were correct.&#x20;
 
-Here are a couple of examples of succinct overviews from products with really great docs:
+So what is Tres Leches Finance, is our approach to building new and better things with the right intentions. Our project has evolved from one cryptocurrency token to a family of tokens with utilities across all of them. Our initial goal was to launch in Cardano, Solana, and Binance Smart Chain. This has since evolved to become a multi-blockchain project to create our own blockchain project as well.&#x20;
 
-> Loom is a video messaging tool that helps you get your message across through instantly shareable videos.
->
-> With Loom, you can record your camera, microphone, and desktop simultaneously. Your video is then instantly available to share through Loom's patented technology.
->
-> — From the [Loom Docs](https://support.loom.com/hc/en-us/articles/360002158057-What-is-Loom-)
+Flash forward to the year 2022 and we now have a cryptocurrency wallet, a smart swap, a stacking platform, an NFT for ownership, an NFT for Dessert Rolodex, a multi-blockchain token, and much more. we continue to build, evolve and develop and most of all to give back to others as best as we can.
 
-> The Mailchimp Marketing API provides programmatic access to Mailchimp data and functionality, allowing developers to build custom features to do things like sync email activity and campaign analytics with their database, manage audiences and campaigns, and more.
->
-> — From the [Mailchimp Marketing API docs](https://mailchimp.com/developer/marketing/docs/fundamentals/)
-
-## Getting Started
-
-**Got 2 minutes?** Check out a video overview of our product:
-
-{% embed url="https://www.loom.com/share/3bfa83acc9fd41b7b98b803ba9197d90" %}
-
-{% hint style="info" %}
-**Good to know:** A succinct video overview is a great way to introduce folks to your product. Embed a Loom, Vimeo or YouTube video and you're good to go! We love this video from the fine folks at [Loom](https://loom.com) as a perfect example of a succinct feature overview.
-{% endhint %}
-
-### Guides: Jump right in
-
-Follow our handy guides to get started on the basics as quickly as possible:
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
-{% hint style="info" %}
-**Good to know:** your product docs aren't just a reference of all your features! use them to encourage folks to perform certain actions and discover the value in your product.
-{% endhint %}
-
-### Fundamentals: Dive a little deeper
-
-Learn the fundamentals of MyProduct to get a deeper understanding of our main features:
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
-{% hint style="info" %}
-**Good to know:** Splitting your product into fundamental concepts, objects, or areas can be a great way to let readers deep dive into the concepts that matter most to them. Combine guides with this approach to 'fundamentals' and you're well on your way to great documentation!
-{% endhint %}

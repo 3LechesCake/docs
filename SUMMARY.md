@@ -37,6 +37,7 @@
 
 * [Blockchain](our-blockchain/blockchain/README.md)
   * [Nodes](our-blockchain/blockchain/nodes.md)
+  * [Blockscout Explorer Install](our-blockchain/blockchain/blockscout-explorer-install.md)
 
 ## Our NFTs
 

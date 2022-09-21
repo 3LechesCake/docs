@@ -260,6 +260,22 @@ config :block_scout_web, BlockScoutWeb.Endpoint,
 
 If using certbot, add cert renewal to crontab
 
+
+
+* Add blockscout and blockscout.local to your `/etc/hosts`
+
+```
+   127.0.0.1       localhost blockscout blockscout.local
+
+   255.255.255.255 broadcasthost
+
+   ::1             localhost blockscout blockscout.local
+```
+
+{% hint style="info" %}
+If using Chrome, Enable `chrome://flags/#allow-insecure-localhost`
+{% endhint %}
+
 ### Part 4 - create and run Blockscout service[​](https://wiki.polygon.technology/docs/edge/additional-features/blockscout/#part-4---create-and-run-blockscout-service) <a href="#part-4---create-and-run-blockscout-service" id="part-4---create-and-run-blockscout-service"></a>
 
 In this part we need to set up a system service as we want Blockscout to run in the background and persist after system reboot.

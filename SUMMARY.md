@@ -38,6 +38,8 @@
 * [Blockchain](our-blockchain/blockchain/README.md)
   * [Nodes](our-blockchain/blockchain/nodes.md)
   * [Blockscout Explorer Install](our-blockchain/blockchain/blockscout-explorer-install.md)
+  * [Page 1](our-blockchain/blockchain/page-1.md)
+  * [Smart Contract Verification](our-blockchain/blockchain/smart-contract-verification.md)
 
 ## Our NFTs
 

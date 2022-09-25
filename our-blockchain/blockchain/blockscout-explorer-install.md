@@ -156,7 +156,8 @@ Now we finally get to start the Blockscout installation.
 #### Clone Blockscout repo[​](https://wiki.polygon.technology/docs/edge/additional-features/blockscout/#clone-blockscout-repo) <a href="#clone-blockscout-repo" id="clone-blockscout-repo"></a>
 
 ```
-cd ~ git clone https://github.com/3LechesCake/blockscout
+cd ~ 
+git clone https://github.com/3LechesCake/blockscout
 ```
 
 #### Generate secret key base to protect production build[​](https://wiki.polygon.technology/docs/edge/additional-features/blockscout/#generate-secret-key-base-to-protect-production-build) <a href="#generate-secret-key-base-to-protect-production-build" id="generate-secret-key-base-to-protect-production-build"></a>

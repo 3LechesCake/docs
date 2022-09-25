@@ -229,7 +229,7 @@ Compilation of these assets can take a few minutes, and it will display no outpu
 For this step you need to return to the root of your Blockscout clone folder.
 
 ```
-cd ~/blockscout/
+cd ~/blockscout/apps/block_scout_web/
 sudo mix phx.digest
 ```
 

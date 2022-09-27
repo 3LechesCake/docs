@@ -36,6 +36,7 @@
 ## Our Blockchain
 
 * [Blockchain](our-blockchain/blockchain/README.md)
+  * [Install and Configure your Node](our-blockchain/blockchain/install-and-configure-your-node.md)
   * [Nodes](our-blockchain/blockchain/nodes.md)
   * [Blockscout Explorer Install](our-blockchain/blockchain/blockscout-explorer-install.md)
   * [Smart Contract Verification](our-blockchain/blockchain/smart-contract-verification.md)

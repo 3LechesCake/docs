@@ -36,7 +36,20 @@ sudo apt -y update && sudo apt -y upgrade
 #### Add erlang repos[​](https://wiki.polygon.technology/docs/edge/additional-features/blockscout/#add-erlang-repos) <a href="#add-erlang-repos" id="add-erlang-repos"></a>
 
 ```
-# go to your home dircd ~# download debwget https://packages.erlang-solutions.com/erlang-solutions_2.0_all.deb# download keywget https://packages.erlang-solutions.com/ubuntu/erlang_solutions.asc# install reposudo dpkg -i erlang-solutions_2.0_all.deb# install keysudo apt-key add erlang_solutions.asc# remove debrm erlang-solutions_2.0_all.deb# remove keyrm erlang_solutions.asc
+# go to your home dir
+cd ~
+# download deb
+wget https://packages.erlang-solutions.com/erlang-solutions_2.0_all.deb
+# download key
+wget https://packages.erlang-solutions.com/ubuntu/erlang_solutions.asc
+# install repo
+sudo dpkg -i erlang-solutions_2.0_all.deb
+# install key
+sudo apt-key add erlang_solutions.asc
+# remove deb
+rm erlang-solutions_2.0_all.deb
+# remove key
+rm erlang_solutions.asc
 ```
 
 #### Add NodeJS repo[​](https://wiki.polygon.technology/docs/edge/additional-features/blockscout/#add-nodejs-repo) <a href="#add-nodejs-repo" id="add-nodejs-repo"></a>

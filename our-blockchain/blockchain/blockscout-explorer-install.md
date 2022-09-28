@@ -36,7 +36,20 @@ sudo apt -y update && sudo apt -y upgrade
 #### Add erlang repos[​](https://wiki.polygon.technology/docs/edge/additional-features/blockscout/#add-erlang-repos) <a href="#add-erlang-repos" id="add-erlang-repos"></a>
 
 ```
-# go to your home dircd ~# download debwget https://packages.erlang-solutions.com/erlang-solutions_2.0_all.deb# download keywget https://packages.erlang-solutions.com/ubuntu/erlang_solutions.asc# install reposudo dpkg -i erlang-solutions_2.0_all.deb# install keysudo apt-key add erlang_solutions.asc# remove debrm erlang-solutions_2.0_all.deb# remove keyrm erlang_solutions.asc
+# go to your home dir
+cd ~
+# download deb
+wget https://packages.erlang-solutions.com/erlang-solutions_2.0_all.deb
+# download key
+wget https://packages.erlang-solutions.com/ubuntu/erlang_solutions.asc
+# install repo
+sudo dpkg -i erlang-solutions_2.0_all.deb
+# install key
+sudo apt-key add erlang_solutions.asc
+# remove deb
+rm erlang-solutions_2.0_all.deb
+# remove key
+rm erlang_solutions.asc
 ```
 
 #### Add NodeJS repo[​](https://wiki.polygon.technology/docs/edge/additional-features/blockscout/#add-nodejs-repo) <a href="#add-nodejs-repo" id="add-nodejs-repo"></a>
@@ -63,13 +76,20 @@ The version of Elixir must be `1.13`. If we try and install this version from th
 Because of this, we need to install the specific precompiled `elixir` version from GitHub releases page.
 
 ```
-cd ~mkdir /usr/local/elixirwget https://github.com/elixir-lang/elixir/releases/download/v1.13.4/Precompiled.zipsudo unzip -d /usr/local/elixir/ Precompiled.ziprm Precompiled.zip
+cd ~
+mkdir /usr/local/elixir
+wget https://github.com/elixir-lang/elixir/releases/download/v1.13.4/Precompiled.zip
+sudo unzip -d /usr/local/elixir/Precompiled.zip
+rm Precompiled.zip
 ```
 
 Now we need to properly set up `exlixir` system binaries.
 
 ```
-sudo ln -s /usr/local/elixir/bin/elixir /usr/local/bin/elixirsudo ln -s /usr/local/elixir/bin/mix /usr/local/bin/mixsudo ln -s /usr/local/elixir/bin/iex /usr/local/bin/iexsudo ln -s /usr/local/elixir/bin/elixirc /usr/local/bin/elixirc
+sudo ln -s /usr/local/elixir/bin/elixir /usr/local/bin/elixir
+sudo ln -s /usr/local/elixir/bin/mix /usr/local/bin/mix
+sudo ln -s /usr/local/elixir/bin/iex /usr/local/bin/iex
+sudo ln -s /usr/local/elixir/bin/elixirc /usr/local/bin/elixirc
 ```
 
 Check if `elixir` and `erlang` are properly installed by running `elixir -v`. This should be the output:
@@ -240,7 +260,8 @@ INFO
 You can skip this step if you won't use `https`.
 
 ```
-cd apps/block_scout_web mix phx.gen.cert blockscout blockscout.local
+cd apps/block_scout_web 
+mix phx.gen.cert blockscout blockscout.local
 ```
 
 The above command will generate and enable self-signed ssl certs, you need to replace them with real ones. You may use [certbot (opens new window)](https://certbot.eff.org/instructions)(letsencrypt) to do it, don't forget to set user permissions and configure the file: `/path/to/blockscout/config/dev.exs`, see example below:
@@ -298,13 +319,29 @@ sudo vi /etc/systemd/system/explorer.service
 The contents of the explorer.service file should look like this:
 
 ```
-[Unit]Description=Blockscout ServerAfter=network.targetStartLimitIntervalSec=0[Service]Type=simpleRestart=alwaysRestartSec=1User=rootStandardOutput=syslogStandardError=syslogWorkingDirectory=/usr/local/blockscoutExecStart=/usr/local/bin/mix phx.serverEnvironmentFile=/usr/local/blockscout/env_vars.env[Install]WantedBy=multi-user.target
+[Unit]
+Description=Blockscout Server
+After=network.target
+StartLimitIntervalSec=0
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=root
+StandardOutput=syslog
+StandardError=syslog
+WorkingDirectory=/usr/local/blockscout
+ExecStart=/usr/local/bin/mix phx.server
+EnvironmentFile=/usr/local/blockscout/env_vars.env
+[Install]
+WantedBy=multi-user.target
 ```
 
 #### Enable starting service on system boot[​](https://wiki.polygon.technology/docs/edge/additional-features/blockscout/#enable-starting-service-on-system-boot) <a href="#enable-starting-service-on-system-boot" id="enable-starting-service-on-system-boot"></a>
 
 ```
-sudo systemctl daemon-reloadsudo systemctl enable explorer.service
+sudo systemctl daemon-reload
+sudo systemctl enable explorer.service
 ```
 
 #### Move your Blockscout clone folder to system-wide location[​](https://wiki.polygon.technology/docs/edge/additional-features/blockscout/#move-your-blockscout-clone-folder-to-system-wide-location) <a href="#move-your-blockscout-clone-folder-to-system-wide-location" id="move-your-blockscout-clone-folder-to-system-wide-location"></a>
@@ -318,7 +355,46 @@ sudo mv ~/blockscout /usr/local
 #### Create env vars file which will be used by Blockscout service[​](https://wiki.polygon.technology/docs/edge/additional-features/blockscout/#create-env-vars-file-which-will-be-used-by-blockscout-service) <a href="#create-env-vars-file-which-will-be-used-by-blockscout-service" id="create-env-vars-file-which-will-be-used-by-blockscout-service"></a>
 
 ```
-sudo touch /usr/local/blockscout/env_vars.env# use your favorite text editorsudo vi /usr/local/blockscout/env_vars.env# env_vars.env file should hold these values ( adjusted for your environment )ETHEREUM_JSONRPC_HTTP_URL="localhost:8545"  # json-rpc API of the chainETHEREUM_JSONRPC_TRACE_URL="localhost:8545" # same as json-rpc API DATABASE_URL='postgresql://blockscout:Passw0Rd@db.instance.local:5432/blockscout' # database connection from Step 2SECRET_KEY_BASE="912X3UlQ9p9yFEBD0JU+g27v43HLAYl38nQzJGvnQsir2pMlcGYtSeRY0sSdLkV/" # secret key base ETHEREUM_JSONRPC_WS_URL="ws://localhost:8545/ws" # websocket API of the chainCHAIN_ID=93201 # chain idHEART_COMMAND="systemctl restart explorer" # command used by blockscout to restart it self in case of failureSUBNETWORK="Supertestnet POA" # this will be in html titleLOGO="/images/polygon_edge_logo.svg" # logo locationLOGO_FOOTER="/images/polygon_edge_logo.svg" # footer logo locationCOIN="EDGE" # coinCOIN_NAME="EDGE Coin" # name of the coinINDEXER_DISABLE_BLOCK_REWARD_FETCHER="true" # disable block reward indexer as Polygon Edge doesn't support tracingINDEXER_DISABLE_PENDING_TRANSACTIONS_FETCHER="true" # disable pending transactions indexer as Polygon Edge doesn't support tracingINDEXER_DISABLE_INTERNAL_TRANSACTIONS_FETCHER="true" # disable internal transactions indexer as Polygon Edge doesn't support tracingMIX_ENV="prod" # run in production modeBLOCKSCOUT_PROTOCOL="http" # protocol to run blockscout web service onPORT=4000 # port to run blockscout service onDISABLE_EXCHANGE_RATES="true" # disable fetching of exchange ratesPOOL_SIZE=200 # the number of database connectionsPOOL_SIZE_API=300 # the number of read-only database connectionsECTO_USE_SSL="false" # if protocol is set to http this should be false HEART_BEAT_TIMEOUT=60 # run HEARTH_COMMAND if heartbeat missing for this amount of secondsINDEXER_MEMORY_LIMIT="10Gb" # soft memory limit for indexer - depending on the size of the chain and the amount of RAM the server hasFETCH_REWARDS_WAY="manual" # disable trace_block query INDEXER_EMPTY_BLOCKS_SANITIZER_BATCH_SIZE=1000 # sanitize empty block in this batch size
+sudo touch /usr/local/blockscout/env_vars.env
+# use your favorite text editor
+sudo vi /usr/local/blockscout/env_vars.env
+# env_vars.env file should hold these values ( adjusted for your environment )
+ETHEREUM_JSONRPC_HTTP_URL="localhost:8545"  
+# json-rpc API of the chain
+ETHEREUM_JSONRPC_TRACE_URL="localhost:8545" 
+# same as json-rpc API 
+DATABASE_URL='postgresql://blockscout:Passw0Rd@db.instance.local:5432/blockscout' 
+# database connection from Step 2
+SECRET_KEY_BASE="912X3UlQ9p9yFEBD0JU+g27v43HLAYl38nQzJGvnQsir2pMlcGYtSeRY0sSdLkV/" 
+# secret key base ETHEREUM_JSONRPC_WS_URL="ws://localhost:8545/ws" 
+# websocket API of the chainCHAIN_ID=93201 
+# chain idHEART_COMMAND="systemctl restart explorer" 
+# command used by blockscout to restart it self in case of failure
+SUBNETWORK="Supertestnet POA"
+ # this will be in html title
+ LOGO="/images/polygon_edge_logo.svg" 
+ # logo location
+ LOGO_FOOTER="/images/polygon_edge_logo.svg" 
+ # footer logo location
+ COIN="EDGE" # coin
+ COIN_NAME="EDGE Coin" # name of the coin
+ INDEXER_DISABLE_BLOCK_REWARD_FETCHER="true" 
+ # disable block reward indexer as Polygon Edge doesn't support tracing
+ INDEXER_DISABLE_PENDING_TRANSACTIONS_FETCHER="true"
+  # disable pending transactions indexer as Polygon Edge doesn't support tracing
+  INDEXER_DISABLE_INTERNAL_TRANSACTIONS_FETCHER="true" 
+  # disable internal transactions indexer as Polygon Edge doesn't support tracing
+  MIX_ENV="prod" # run in production mode
+  BLOCKSCOUT_PROTOCOL="http" # protocol to run blockscout web service on
+  PORT=4000 # port to run blockscout service on
+  DISABLE_EXCHANGE_RATES="true" # disable fetching of exchange rates
+  POOL_SIZE=200 # the number of database connections
+  POOL_SIZE_API=300 # the number of read-only database connections
+  ECTO_USE_SSL="false" # if protocol is set to http this should be false 
+  HEART_BEAT_TIMEOUT=60 # run HEARTH_COMMAND if heartbeat missing for this amount of seconds
+  INDEXER_MEMORY_LIMIT="10Gb" # soft memory limit for indexer - depending on the size of the chain and the amount of RAM the server has
+  FETCH_REWARDS_WAY="manual" # disable trace_block query 
+  INDEXER_EMPTY_BLOCKS_SANITIZER_BATCH_SIZE=1000 # sanitize empty block in this batch size
 ```
 
 INFO

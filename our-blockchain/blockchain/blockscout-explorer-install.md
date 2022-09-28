@@ -426,7 +426,9 @@ sudo journalctl -u explorer.service -f
 You can check if there are some new listening ports:
 
 ```
-# if netstat is not installedsudo apt install net-toolssudo netstat -tulpn
+# if netstat is not installed
+sudo apt install net-tools
+sudo netstat -tulpn
 ```
 
 You should get a list of listening ports and on the list there should be something like this:

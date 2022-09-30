@@ -6,4 +6,9 @@ Explorer: https://explorer-test.tresleches.finance
 
 Faucet: http://faucet.tresleches.finance:8080
 
-Faucet configuration using&#x20;
+Faucet configuration using:
+
+{% embed url="https://github.com/3LechesCake/eth-faucet" %}
+
+Testnet Contracts:
+

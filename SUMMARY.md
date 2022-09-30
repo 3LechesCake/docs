@@ -41,6 +41,7 @@
     * [Secure the Node](our-blockchain/blockchain/nodes/secure-the-node.md)
   * [Blockscout Explorer Install](our-blockchain/blockchain/blockscout-explorer-install.md)
   * [Smart Contract Verification](our-blockchain/blockchain/smart-contract-verification.md)
+  * [Testnet Configuration](our-blockchain/blockchain/testnet-configuration.md)
 
 ## Our NFTs
 

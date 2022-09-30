@@ -16,6 +16,10 @@ Smart Contract VerificationDetails about the verification microserviceA microser
 * Application: [https://github.com/blockscout/blockscout-rs/tree/main/smart-contract-verifier](https://github.com/blockscout/blockscout-rs/tree/main/smart-contract-verifier)​
 * Http API: [https://github.com/blockscout/blockscout-rs/tree/main/smart-contract-verifier-http](https://github.com/blockscout/blockscout-rs/tree/main/smart-contract-verifier-http)​
 
+In order to succesffully intall and configure the servie docker and docker compose are needed.
+
+{% embed url="https://linuxhostsupport.com/blog/how-to-install-and-configure-docker-compose-on-ubuntu-20-04/" %}
+
 Service Configuration
 
 ```

@@ -16,6 +16,33 @@ Smart Contract VerificationDetails about the verification microserviceA microser
 * Application: [https://github.com/blockscout/blockscout-rs/tree/main/smart-contract-verifier](https://github.com/blockscout/blockscout-rs/tree/main/smart-contract-verifier)​
 * Http API: [https://github.com/blockscout/blockscout-rs/tree/main/smart-contract-verifier-http](https://github.com/blockscout/blockscout-rs/tree/main/smart-contract-verifier-http)​
 
+Service Configuration
+
+```
+
+[Unit]
+Description=smart-contract-verifier-http
+Requires=docker.service
+After=docker.service
+
+[Service]
+Restart=10
+User=root
+Group=docker
+WorkingDirectory=/usr/local/blockscout-rs/smart-contract-verifier-http
+# Shutdown container (if running) when unit is started
+ExecStartPre=/usr/bin/docker-compose -f docker-compose.yaml down
+# Start container when unit is started
+ExecStart=/usr/bin/docker-compose -f /usr/local/blockscout-rs/smart-contract-verifier-http/docker-compose.yaml up
+# Stop container when unit is stopped
+ExecStop=/usr/bin/docker-compose -f docker-compose.yaml down
+
+[Install]
+WantedBy=multi-user.target
+
+
+```
+
 ### **Activation** <a href="#activation" id="activation"></a>
 
 * Update Blockscout to the 4.1.8 release

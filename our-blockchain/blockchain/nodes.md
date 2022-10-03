@@ -30,6 +30,12 @@ RestartSec=5s
 WantedBy=defaul.target
 ```
 
+sudo systemctl enable bnode
+
+sudo systemctl start bnode
+
+
+
 Create Node 1 as Service
 
 sudo nano  **/etc/init.d/geth**

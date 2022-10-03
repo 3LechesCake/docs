@@ -4,6 +4,10 @@ Download the miner from [https://github.com/3LechesCake/Blockchain/tree/main/Min
 
 once downloaded ensure is connected to the bootnode and you should be able to mine transactions for the blockchain and earn tokens.
 
+Create bootnode --genkey=boot.key
+
+then create the following service.
+
 Create Boot Node as Service
 
 sudo nano /etc/systemd/system/bootnode.service
@@ -18,7 +22,7 @@ Wants=network.target
 User=tresservice
 Group=tresservice
 Type=simple
-ExecStart=bootnode -nodekey boot.key -verbosity 7 -addr 147.182.143.50:30301
+ExecStart=bootnode -nodekey /usr/local/testnet/bnode/boot.key -verbosity 7 -addr 147.182.143.50:30301
 
 KillMode=process
 KillSignal=SIGINT

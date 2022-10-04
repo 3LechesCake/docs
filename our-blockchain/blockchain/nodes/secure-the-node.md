@@ -2,11 +2,13 @@
 
 
 
-<pre><code>sudo add-apt-repository ppa:certbot/certbot
+```
+sudo add-apt-repository ppa:certbot/certbot
 sudo apt-get update
 sudo apt-get install certbot
-<strong>sudo certbot certonly --standalone -d rpc-test.tresleches.finance
-</strong></code></pre>
+sudo certbot certonly --standalone -d rpc-test.tresleches.finance
+
+```
 
 Install ngix [https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-20-04](https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-20-04)
 

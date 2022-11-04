@@ -44,7 +44,5 @@ Updating an existing Geth installation can be achieved by stopping the node, dow
 
 Download treslechesmainnet.json or treslechestestnet.json from github.
 
-[https://github.com/3LechesCake/Blockchain/tree/main/Configuration/Genesis](https://github.com/3LechesCake/Blockchain/tree/main/Configuration/Genesis)
-
 get init --datadir data treslechesmainnet.json
 

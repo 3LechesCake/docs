@@ -37,6 +37,9 @@
     * [Terms of Use of Blockwallet/CakeWallet](our-wallet/wallet/extension/terms-of-use-of-blockwallet-cakewallet.md)
     * [How to use the Phishing Protection feature](our-wallet/wallet/extension/how-to-use-the-phishing-protection-feature.md)
     * [What Is a Dropped Transaction?](our-wallet/wallet/extension/what-is-a-dropped-transaction.md)
+    * [How do Hardware Wallets Work?](our-wallet/wallet/extension/how-do-hardware-wallets-work.md)
+    * [How to get the Ledger Hardware Wallet](our-wallet/wallet/extension/how-to-get-the-ledger-hardware-wallet.md)
+    * [How to get the Trezor Hardware Wallet?](our-wallet/wallet/extension/how-to-get-the-trezor-hardware-wallet.md)
 
 ## Our Blockchain
 

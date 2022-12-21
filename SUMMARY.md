@@ -36,6 +36,7 @@
     * [Privacy Policy](our-wallet/wallet/extension/privacy-policy.md)
     * [Terms of Use of Blockwallet/CakeWallet](our-wallet/wallet/extension/terms-of-use-of-blockwallet-cakewallet.md)
     * [How to use the Phishing Protection feature](our-wallet/wallet/extension/how-to-use-the-phishing-protection-feature.md)
+    * [What Is a Dropped Transaction?](our-wallet/wallet/extension/what-is-a-dropped-transaction.md)
 
 ## Our Blockchain
 

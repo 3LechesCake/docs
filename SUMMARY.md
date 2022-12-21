@@ -32,6 +32,9 @@
   * [Android](our-wallet/wallet/android.md)
   * [IOS](our-wallet/wallet/ios.md)
   * [Dapp Catalog](our-wallet/wallet/dapp-catalog.md)
+  * [Extension](our-wallet/wallet/extension/README.md)
+    * [Privacy Policy](our-wallet/wallet/extension/privacy-policy.md)
+    * [Terms of Use of Blockwallet/CakeWallet](our-wallet/wallet/extension/terms-of-use-of-blockwallet-cakewallet.md)
 
 ## Our Blockchain
 

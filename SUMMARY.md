@@ -35,6 +35,7 @@
   * [Extension](our-wallet/wallet/extension/README.md)
     * [Privacy Policy](our-wallet/wallet/extension/privacy-policy.md)
     * [Terms of Use of Blockwallet/CakeWallet](our-wallet/wallet/extension/terms-of-use-of-blockwallet-cakewallet.md)
+    * [How to use the Phishing Protection feature](our-wallet/wallet/extension/how-to-use-the-phishing-protection-feature.md)
 
 ## Our Blockchain
 

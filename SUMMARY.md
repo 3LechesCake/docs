@@ -41,6 +41,7 @@
     * [How do Hardware Wallets Work?](our-wallet/wallet/extension/how-do-hardware-wallets-work.md)
     * [How to get the Ledger Hardware Wallet](our-wallet/wallet/extension/how-to-get-the-ledger-hardware-wallet.md)
     * [How to get the Trezor Hardware Wallet?](our-wallet/wallet/extension/how-to-get-the-trezor-hardware-wallet.md)
+    * [What is an HD Path?](our-wallet/wallet/extension/what-is-an-hd-path.md)
 
 ## Our Blockchain
 

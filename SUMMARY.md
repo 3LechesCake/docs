@@ -43,6 +43,7 @@
     * [How to get the Trezor Hardware Wallet?](our-wallet/wallet/extension/how-to-get-the-trezor-hardware-wallet.md)
     * [What is an HD Path?](our-wallet/wallet/extension/what-is-an-hd-path.md)
     * [What is Lock Timeout?](our-wallet/wallet/extension/what-is-lock-timeout.md)
+    * [How to Add a Custom Network RPC](our-wallet/wallet/extension/how-to-add-a-custom-network-rpc.md)
 
 ## Our Blockchain
 

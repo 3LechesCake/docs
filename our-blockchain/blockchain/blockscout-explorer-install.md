@@ -361,6 +361,10 @@ sudo mv ~/blockscout /usr/local
 sudo touch /usr/local/blockscout/env_vars.env
 # use your favorite text editor
 sudo vi /usr/local/blockscout/env_vars.env
+```
+
+{% code overflow="wrap" %}
+```
 # env_vars.env file should hold these values ( adjusted for your environment )
 ETHEREUM_JSONRPC_HTTP_URL="localhost:8545"  
 # json-rpc API of the chain
@@ -374,31 +378,39 @@ SECRET_KEY_BASE="912X3UlQ9p9yFEBD0JU+g27v43HLAYl38nQzJGvnQsir2pMlcGYtSeRY0sSdLkV
 # chain idHEART_COMMAND="systemctl restart explorer" 
 # command used by blockscout to restart it self in case of failure
 SUBNETWORK="Supertestnet POA"
- # this will be in html title
- LOGO="/images/polygon_edge_logo.svg" 
- # logo location
- LOGO_FOOTER="/images/polygon_edge_logo.svg" 
- # footer logo location
- COIN="EDGE" # coin
- COIN_NAME="EDGE Coin" # name of the coin
- INDEXER_DISABLE_BLOCK_REWARD_FETCHER="true" 
- # disable block reward indexer as Polygon Edge doesn't support tracing
- INDEXER_DISABLE_PENDING_TRANSACTIONS_FETCHER="true"
-  # disable pending transactions indexer as Polygon Edge doesn't support tracing
-  INDEXER_DISABLE_INTERNAL_TRANSACTIONS_FETCHER="true" 
-  # disable internal transactions indexer as Polygon Edge doesn't support tracing
-  MIX_ENV="prod" # run in production mode
-  BLOCKSCOUT_PROTOCOL="http" # protocol to run blockscout web service on
-  PORT=4000 # port to run blockscout service on
-  DISABLE_EXCHANGE_RATES="true" # disable fetching of exchange rates
-  POOL_SIZE=200 # the number of database connections
-  POOL_SIZE_API=300 # the number of read-only database connections
-  ECTO_USE_SSL="false" # if protocol is set to http this should be false 
-  HEART_BEAT_TIMEOUT=60 # run HEARTH_COMMAND if heartbeat missing for this amount of seconds
-  INDEXER_MEMORY_LIMIT="10Gb" # soft memory limit for indexer - depending on the size of the chain and the amount of RAM the server has
-  FETCH_REWARDS_WAY="manual" # disable trace_block query 
-  INDEXER_EMPTY_BLOCKS_SANITIZER_BATCH_SIZE=1000 # sanitize empty block in this batch size
+# this will be in html title
+LOGO="/images/polygon_edge_logo.svg" 
+# logo location
+LOGO_FOOTER="/images/polygon_edge_logo.svg" 
+# footer logo location
+COIN="EDGE" # coin
+COIN_NAME="EDGE Coin" # name of the coin
+INDEXER_DISABLE_BLOCK_REWARD_FETCHER="true" 
+# disable block reward indexer as Polygon Edge doesn't support tracing
+INDEXER_DISABLE_PENDING_TRANSACTIONS_FETCHER="true"
+# disable pending transactions indexer as Polygon Edge doesn't support tracing
+INDEXER_DISABLE_INTERNAL_TRANSACTIONS_FETCHER="true" 
+# disable internal transactions indexer as Polygon Edge doesn't support tracing
+MIX_ENV="prod" # run in production mode
+BLOCKSCOUT_PROTOCOL="http" # protocol to run blockscout web service on
+PORT=4000 # port to run blockscout service on
+DISABLE_EXCHANGE_RATES="true" # disable fetching of exchange rates
+POOL_SIZE=200 
+# the number of database connections
+POOL_SIZE_API=300 
+# the number of read-only database connections
+ECTO_USE_SSL="false" 
+# if protocol is set to http this should be false 
+HEART_BEAT_TIMEOUT=60 
+# run HEARTH_COMMAND if heartbeat missing for this amount of seconds
+INDEXER_MEMORY_LIMIT="10Gb" 
+# soft memory limit for indexer - depending on the size of the chain and the amount of RAM the server has
+FETCH_REWARDS_WAY="manual" 
+# disable trace_block query 
+INDEXER_EMPTY_BLOCKS_SANITIZER_BATCH_SIZE=1000 
+# sanitize empty block in this batch size
 ```
+{% endcode %}
 
 INFO
 

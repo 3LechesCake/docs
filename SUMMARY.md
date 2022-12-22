@@ -44,6 +44,7 @@
     * [What is an HD Path?](our-wallet/wallet/extension/what-is-an-hd-path.md)
     * [What is Lock Timeout?](our-wallet/wallet/extension/what-is-lock-timeout.md)
     * [How to Add a Custom Network RPC](our-wallet/wallet/extension/how-to-add-a-custom-network-rpc.md)
+    * [Tips to Stay Safe When Connecting to DApps](our-wallet/wallet/extension/tips-to-stay-safe-when-connecting-to-dapps.md)
 
 ## Our Blockchain
 

@@ -45,6 +45,7 @@
     * [What is Lock Timeout?](our-wallet/wallet/extension/what-is-lock-timeout.md)
     * [How to Add a Custom Network RPC](our-wallet/wallet/extension/how-to-add-a-custom-network-rpc.md)
     * [Tips to Stay Safe When Connecting to DApps](our-wallet/wallet/extension/tips-to-stay-safe-when-connecting-to-dapps.md)
+    * [How to Use BlockWallet Bridges](our-wallet/wallet/extension/how-to-use-blockwallet-bridges.md)
 
 ## Our Blockchain
 

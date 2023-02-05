@@ -1,6 +1,6 @@
 # Table of contents
 
-* [What is Tres Leches  Finance?](README.md)
+* [What is Tres Chain?](README.md)
 * [Our Logos](our-logos.md)
 
 ## Intro
